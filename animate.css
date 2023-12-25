@@ -1,0 +1,478 @@
+.muzzle_flash {
+    width: 160px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('assets/img/muzzle_flash1.png');
+    /* transform: rotate(180deg) translate3d(100%,10%,0); */
+    animation: muzzleFlash 1s;
+    animation-fill-mode: forwards;
+}   
+
+#right-gun{
+    transform: scaleX(-1);
+}
+
+.left-obj{
+    transform: scaleX(-1);
+}
+
+.gun-body-0{
+    position: relative; 
+} 
+.gun-body-1{
+    position: relative; 
+} 
+
+.howl-gun{
+    width: 250px;
+    height: auto;  
+} 
+.neon-gun{
+    width: 150px;
+    height: auto;  
+} 
+.sniper-gun{
+    width: 350px;
+    height: auto;  
+}
+ 
+
+.avatar-wrap{
+    position: relative;
+}
+.user-avatar-img{
+    width: 100%;
+    border-radius: 200px;
+}
+.gun-wrap-0{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 0px;
+    height: 0px;
+    background: green;
+}
+.gun-wrap-1{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    background: green;
+}
+
+.gun-vibrate{
+    animation-name: gun-vibrate;
+    animation-duration: .3s
+}
+
+.gun-rotate{
+    animation-name: rotate_gun;
+    animation-duration: .2s
+}
+
+.gun-hide{
+    animation-name: hidden_gun;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bullet-hole{
+    position: absolute;
+    display: block;
+    width: 25px; 
+}
+
+.bullet-hole-big{
+    position: absolute;
+    display: block;
+    width: 40px; 
+}
+
+.howl-fire{
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 55px;
+    left: 250px;
+    animation: howlFlash 1s;
+    animation-fill-mode: forwards;
+}
+
+.neon-fire{
+    position: absolute;
+    display: block;
+    top: 10px;
+    width: 55px;
+    left: 150px;
+    animation: howlFlash 1s;
+    animation-fill-mode: forwards;
+}
+
+.sniper-fire{
+    position: absolute;
+    display: block;
+    top: 5px;
+    width: 60px;
+    left: 355px;
+    animation: howlFlash 1s;
+    animation-fill-mode: forwards;
+}
+
+.avatar-damaged {
+    animation-name: avatar_damage;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.avatar-damaged_big {
+    animation-name: avatar_damage_big;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+.power_wave {
+    position: absolute;
+    background-color: #8486a6;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-name: wave_grow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+.power_wave_blue {
+    position: absolute;
+    background-color: #0066ff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-name: wave_grow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+.power_wave_red {
+    position: absolute;
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-name: wave_grow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+
+.power_wave_mobile {
+    position: absolute;
+    background-color: #8486a6;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-name: wave_grow_m;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+.power_wave_blue_mobile {
+    position: absolute;
+    background-color: #0066ff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-name: wave_grow_m;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+.power_wave_red_mobile {
+    position: absolute;
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-name: wave_grow_m;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+.pan-0 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-image: url('assets/img/pubg_pan.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    z-index: 99;
+}
+
+.pan-1 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-image: url('assets/img/pubg_pan_1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    top: calc(50% - 100px);
+    right: calc(50% - 100px);
+    z-index: 99;
+}
+
+.die{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #000000b0;
+    transition: 2s;
+}
+
+.winner-fighter span{
+    animation-name: winner-text;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.die-icon{
+    scale: 0.4;
+}
+
+.die-icon path{
+   fill: #390808;
+}
+
+.blood-info{
+    display: none;
+    flex-direction: column;
+    width: 100%; 
+    align-items: center;
+}
+
+.app-fight-blood{
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    from {opacity: 0.7;}
+    to {opacity: 1;}
+}
+
+@keyframes howlFlash {
+    0% {
+        opacity: 0;
+        filter: brightness(1)
+    } 
+    5% {
+        opacity: .9;
+        filter: brightness(3)
+    } 
+    10% {
+        opacity: .9
+    }
+
+    50% {
+        filter: brightness(1)
+    } 
+    to {
+        opacity: 0
+    } 
+}
+
+@keyframes gun-vibrate {
+    0% {
+        transform: translate3d(12%,0,0)
+    }
+
+    10% {
+        transform: translate3d(-12%,0,0)
+    }  
+
+    40% {
+        transform: translate3d(12%,0,0)
+    }
+
+    50% {
+        transform: translate3d(-12%,0,0)
+    }  
+
+    80% {
+        transform: translate3d(12%,0,0)
+    }
+
+    90% {
+        transform: translate3d(-12%,0,0)
+    }
+
+    to {
+        transform: translate3d(12%,0,0)
+    }
+
+    0%,to {
+        transform: translateZ(0)
+    }
+}
+
+@keyframes rotate_gun {
+    0% {
+        transform: rotateZ(30deg);
+        opacity: 0.3;
+    }
+    20% {
+        transform: rotateZ(10deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotateZ(5deg);
+        opacity: 0.7;
+    }
+    90% {
+        transform: rotateZ(2deg);
+        opacity: 1;
+    }
+    to {
+        transform: rotateZ(0deg);
+        opacity: 1;
+    }
+}
+
+
+@keyframes hidden_gun {
+    0% { 
+        opacity: 0.7;
+    } 
+    to { 
+        opacity: 0;
+    }
+}
+
+@keyframes avatar_damage {
+    0% {
+        filter: brightness(1)
+    }
+
+    30% {
+        filter: brightness(2.5)
+    }
+
+    to {
+        filter: brightness(1)
+    }
+
+    0%,to {
+        transform: translateZ(0)
+    }
+
+    10%,30%,50%,70%,90% {
+        transform: translate3d(-2%,0,0)
+    }
+
+    20%,40%,60%,80% {
+        transform: translate3d(2%,0,0)
+    }
+}
+
+@keyframes avatar_damage_big {
+    0% {
+        filter: brightness(1)
+    }
+
+    30% {
+        filter: brightness(2.5)
+    }
+
+    to {
+        filter: brightness(1)
+    }
+
+    0%,to {
+        transform: translateZ(0)
+    }
+
+    10%, 50%, 90% {
+        transform: translate3d(-4%,0,0)
+    }
+
+    20%,40%,60%,80% {
+        transform: translate3d(4%,0,0)
+    }
+}
+
+@keyframes wave_grow {
+    0% {
+        opacity: .1;
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(15)
+    }
+}
+
+@keyframes wave_grow_m {
+    0% {
+        opacity: .1;
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(4)
+    }
+}
+
+
+@keyframes winner-text {
+    0% {
+        opacity: 0.2;
+        filter: brightness(1)
+    } 
+    15% {
+        opacity: .9;
+        filter: brightness(3)
+    } 
+    30% {
+        opacity: .9;
+        filter: brightness(5)
+    } 
+    50% {
+        filter: brightness(1)
+    } 
+    to {
+        opacity: 0.2
+    } 
+}
