@@ -95,6 +95,9 @@
     const ls_b = [35, 50, 40, 30, 45, 42, 38, 47, 44];
     const ws_b = [25, 26, 27, 28, 29, 30, 31, 32, 33];
 
+    const random_fight_value = [beta frequency alpha one support speed sock voice guest man post wireless device model grape quality standard laptop couch iso moon reader family mission computer money donate network
+global sea luggage operating system bluethooth rate high mind blue sadness happy salt sold slam slot book student library floor];
+
     function run(){
         run_animation(1701032346, 1)
     }
